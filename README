@@ -1,0 +1,47 @@
+Name: Kevin Wilhoit
+Clemson Email Address: kwilhoi@clemson.edu
+ 
+Project no: 
+  3
+Project due date: 
+  10/1/2014
+Project description: 
+
+  The first program, alphamask, takes in the dhouse.png input image, and 
+computes an alphamask for it. This sets the alpha values of the green background to 0, 
+causing the background to become fully transparent. The program takes in a second filename
+and writes out the produced image to it. 
+  The second program, composite, takes in the output image from the first program and 
+composites the image on top of a background image that is passed in. This is done using the
+over operation, and causes the output image of the first program to be placed on top of the
+second image passed in. A third filename is accepted, and can be written to by pressing the 
+'w' key while the program is running. If you did not pass in a file name to write a final
+image to, the program will ask for a name in the terminal window. The 'q' or 'Q' key quits
+the program. 
+  The file "ranges.txt" contains the ranges for the H, S, and V values that will be used
+to calculate the alphamask. 
+    -The first line is the H upper value; 
+    -The second line is the H lower value;  
+    -The third line is the S upper value; 
+    -The fourth line is the S lower value;
+    -The fifth line is the V upper value; 
+    -The sixth line is the V lower value.  
+
+
+How to run your program:
+  make
+  "./alphamask filename.ext filename2.ext"
+  "./composite filename.ext filename2.ext filename3.ext"
+  Examples: "./alphamask dhouse.png output.png" 
+            "./composite output.png beach.jpg"
+                 or
+            "./composite output.png beach.jpg output_final.png"
+ 
+The Specs that I implemented are: 
+  Masking, Compositing
+
+The Specs that I was unable to implement are:
+  
+Extras:
+
+
